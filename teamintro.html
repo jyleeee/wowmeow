@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>团队介绍</title>
+
+<link rel="shortcut icon" href="images/web_logo.png" type="image/x-icon">
+<link rel="icon" href="images/web_logo.png"type="image/x-icon">
+<link rel="shortcut icon" href="images/web_logo.png" type="image/x-icon">
+<link rel="icon" href="images/web_logo.png"type="image/x-icon">
+<link href="css/demo.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/iconfont.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/teamintro.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script>
+$(function(){  
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失  
+        $(function () {  
+            $(window).scroll(function(){  
+                if ($(window).scrollTop()>100){  
+                    $("#back-to-top").fadeIn(800);  
+                }  
+                else  
+                {  
+                    $("#back-to-top").fadeOut(1000);  
+                }  
+            });  
+  
+            //当点击跳转链接后，回到页面顶部位置  
+  
+            $("#back-to-top").click(function(){  
+                $('body,html').animate({scrollTop:0},1000);  
+                return false;  
+            });  
+        });  
+    });  
+</script>
+</head>
+
+<body>
+<!--section began-->
+<section id="one">
+	<header>
+    	<div class="inner">
+        	<a href="index_1.html"><img src="images/logo_small_03.png" class="logo_left"></a>
+            <nav>
+            	<ul class="nav_list">
+                	<li class="home_1"><a href="index_1.html">首页</a></li>
+                    <li class="about"><a href="about.html">关于我们</a></li>
+                    <li class="contast"><a href="contast.html">联系我们</a></li>
+                    <li class="story"><a href="story.html">哇妙故事</a></li>
+                    <li class="team"><a href="#">团队介绍</a></li>
+                    <li class="join"><a href="join.html">加入我们</a></li>
+                    <div class="clearfix"></div>
+                </ul>	
+            </nav>
+        </div>
+    </header>
+    <div class="inner">
+		<div class="inner">
+			<h1>团队介绍</h1>
+			<h3>Team Introduction</h3>
+		</div>
+    </div>
+</section>
+<section id="two">
+	<img src="images/two_position_01.png" class="one_position">
+</section>
+<section id="three" class="content-inner">
+	<h2 class="member-num js-text-split"></h2>
+		<ul class="member-list">
+<!--这个li是存放照片的,去style里的style.min.css搜索member-1可以找到替换图片的位置-->
+			<li class="member-1 js-animation">
+				<div class="member-block">
+                	<div class="member-block-inner">
+                     	<div class="member-block-left">
+                        	<div class="member-thumb"></div>
+                        </div> 
+<!--/ .member-block-left -->
+                        <div class="member-block-right">
+                        	<h1 class="member-name">阿娜达<br/>卡机吗</h1>
+                            <div class="member-detail-btn"><span></span></div>
+                            <div class="member-detail">
+                            	<div class="member-detail-inner">
+                           			<p class="member-detail-text">呵呵哒</p>
+                            		<ul class="member-detail-sns">
+                                    	<li><a href="https://www.facebook.com/shimizu.taka" target="_blank"><span class="icon-facebook"></span></a></li>
+                                    	<li><a href="https://twitter.com/shimizu_taka" target="_blank"><span class="icon-twitter"></span></a></li>
+                                    </ul>
+                                </div>
+                             </div>
+                                <h2 class="green-label tri-lt"><p>CEO</p></h2>
+                          </div> 
+<!--/ .member-block-right -->
+                        </div>
+                    </div>
+				</li> 
+<!--/ .member-1 -->
+			<li class="member-2 js-animation">
+            	<div class="member-block">
+                	<div class="member-block-inner">
+                    	<div class="member-block-left">
+                        	<div class="member-thumb"></div>
+                        </div> 
+<!--/ .member-block-left -->
+                    <div class="member-block-right">
+                    	<h1 class="member-name">Kazuki<br/>Iwai</h1>
+                        <div class="member-detail-btn"><span></span></div>
+                        <div class="member-detail">
+                        	<div class="member-detail-inner">
+                            	<p class="member-detail-text">1981年生まれ。WEB・アプリ制作ディレクション、プロモーション全体のコンサルを担当。金融教育ベンチャーで事業開発やマーケ/広報/企画部門リーダーを兼任。複数の企業立ち上げに参画。好きな食べ物はサブウェイ。</p>
+                                <ul class="member-detail-sns">
+                                	<li><a href="https://www.facebook.com/kazuki.iwai" target="_blank"><span class="icon-facebook"></span></a></li>
+                                </ul>
+                             </div>
+                        </div>
+                        <h2 class="green-label tri-lt"><p>Director</p></h2>
+                     </div> 
+<!--/ .member-block-right -->
+                   </div>
+                </div>
+             </li> 
+<!--/ .member-2 -->
+             <li class="member-3 js-animation">
+				<div class="member-block">
+					<div class="member-block-inner">
+						<div class="member-block-left">
+							<div class="member-thumb"></div>
+						</div> 
+<!--/ .member-block-left -->
+                    <div class="member-block-right">
+                    	<h1 class="member-name">Kodai<br/>Aseishi</h1>
+                        <div class="member-detail-btn"><span></span></div>
+                        <div class="member-detail">
+                        	<div class="member-detail-inner">
+                            	<p class="member-detail-text">1987年生まれ。WEB・アプリの制作ディレクションのほか、社内のデザインも一部担当。前社にてWeb媒体運営・社内デザイン業務を経験。アート面をさらに強化中。好きな食べ物は、チャンジャにビール。</p>
+                                <ul class="member-detail-sns">
+                                	<li><a href="https://www.facebook.com/kodai.aseishi" target="_blank"><span class="icon-facebook"></span></a></li>
+                                </ul>
+                             </div>
+                        </div>
+                        <h2 class="green-label tri-lt"><p>Director</p></h2>
+                    </div> 
+<!--/ .member-block-right -->
+                 </div>
+               </div>
+            </li> 
+<!--/ .member-3 -->
+            <li class="member-4 js-animation">
+            	<div class="member-block">
+                	<div class="member-block-inner">
+                    	<div class="member-block-left">
+                        	<div class="member-thumb"></div>
+                        </div> 
+<!--/ .member-block-left -->
+                        <div class="member-block-right">
+                        	<h1 class="member-name">Kazuma<br/>Sugawara</h1>
+                            <div class="member-detail-btn"><span></span></div>
+                            <div class="member-detail">
+                            	<div class="member-detail-inner">
+                                	<p class="member-detail-text">1989年生まれ。主に企画やSNS/WEBマーケティング・開発ディレクションを担当。大手WEBコンサル会社とエンジニアの経験を活かして、常に最善策を模索している。好きな食べ物は、分厚い肉。</p>
+                                    <ul class="member-detail-sns"></ul>
+                                </div>
+                            </div>
+                            <h2 class="green-label tri-lt"><p>Director</p></h2>
+                         </div> <!--/ .member-block-right -->
+                      </div>
+                 </div>
+              </li> 
+<!--/ .member-4 -->
+              <li class="member-5 js-animation">
+              	<div class="member-block">
+                	<div class="member-block-inner">
+                     	<div class="member-block-left">
+                        	<div class="member-thumb"></div>
+                        </div> <!--/ .member-block-left -->
+                   		<div class="member-block-right">
+                    		<h1 class="member-name">Mari<br/>Nakane</h1>
+                        	<div class="member-detail-btn"><span></span></div>
+                        	<div class="member-detail">
+                        		<div class="member-detail-inner">
+                            		<p class="member-detail-text">1987年生まれ｡紅一点｡アプリやWEBの制作ディレクションを担当。企画立案を得意とする。金融系営業を経て､ファーストタッチに入社。好きな食べ物は､なめろう｡</p>
+                                	<ul class="member-detail-sns"></ul>
+                            	</div>
+                         	</div>
+                         	<h2 class="green-label tri-lt"><p>Director</p></h2>
+                    	</div> 
+<!--/ .member-block-right -->
+               		</div>
+				</div>
+              </li> 
+<!--/ .member-5 -->
+              <li class="member-careers js-animation">
+              	<div class="member-block">
+                	<div class="member-block-inner">
+                    	<p>ファーストタッチは、一緒に働くスペシャリストな仲間を募集しています。新しいモノ・コトを創りにJOINご希望の方、あなたの唯一無二のチャーミングポイントを是非アピールください。</p>
+                        <a href="http://1st-touch.jp/contact/" class="text-link" data-pjax="true" data-recruit="true"><span class="icon-arrow-right"></span><span>お問い合わせフォームへ</span></a>
+                    </div>
+                </div>
+              </li>
+<!--/ .member-careers -->
+	</ul>
+</section> 
+<div class="border-inner">
+	<div class="bg-border border-1"></div>
+    <div class="bg-border border-2"></div>
+    <div class="bg-border border-3"></div>
+    <div class="bg-border border-4"></div>
+    <div class="bg-border border-5"></div>
+</div>
+<footer></footer>
+<!--section end-->
+<!--gotop began-->
+<div id="gotop">
+	<p id="back-to-top"><a href="#top"><img src="images/gototop.png"  class="gotop_bg"/></a></p> 
+</div>
+<!--gotop end-->
+</body>
+</html>

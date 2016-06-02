@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>关于我们</title>
+
+<link rel="shortcut icon" href="images/web_logo.png" type="image/x-icon">
+<link rel="icon" href="images/web_logo.png"type="image/x-icon">
+<link href="css/about.css" rel="stylesheet" type="text/css">
+<link href="css/demo.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/iconfont.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script>
+$(function(){  
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失  
+        $(function () {  
+            $(window).scroll(function(){  
+                if ($(window).scrollTop()>100){  
+                    $("#back-to-top").fadeIn(800);  
+                }  
+                else  
+                {  
+                    $("#back-to-top").fadeOut(1000);  
+                }  
+            });  
+  
+            //当点击跳转链接后，回到页面顶部位置  
+  
+            $("#back-to-top").click(function(){  
+                $('body,html').animate({scrollTop:0},1000);  
+                return false;  
+            });  
+        });  
+    });  
+</script>
+</head>
+
+<body>
+<!--section began-->
+<section id="one">
+	<header>
+    	<div class="inner">
+        	<a href="index_1.html"><img src="images/logo_small_03.png" class="logo_left"></a>
+            <nav>
+            	<ul class="nav_list">
+                	<li class="home_1"><a href="index_1.html">首页</a></li>
+                    <li class="about"><a href="#">关于我们</a></li>
+                    <li class="contast"><a href="contast.html">联系我们</a></li>
+                    <li class="story"><a href="story.html">哇妙故事</a></li>
+                    <li class="team"><a href="team.html">团队介绍</a></li>
+                    <li class="join"><a href="join.html">加入我们</a></li>
+                    <div class="clearfix"> </div>
+                </ul>	
+            </nav>
+        </div>
+    </header>
+    <div class="inner">
+		<div class="inner">
+			<h1>关于我们</h1>
+			<h3>About us</h3>
+		</div>
+    </div>
+</section>
+<section id="two">
+	<img src="images/two_position_02.png" class="one_position">
+</section>
+<section id="three">
+	<div class="inner">
+		<h2>哇妙－构建人与宠物美好关系的线上杂志</h2>
+        <h4>Wow Meow is an online magazine that construct a friendly relationship between people and pets.</h4>
+    </div>
+</section>
+<section id="four">
+	<div class="inner">
+    </div>
+</section>
+<footer></footer>
+<!--section end-->
+<!--gotop began-->
+<div id="gotop">
+	<p id="back-to-top"><a href="#top"><img src="images/gototop.png"  class="gotop_bg"/></a></p> 
+</div>
+<!--gotop end-->
+</body>
+</html>
