@@ -1,131 +1,95 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<title>团队介绍</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>团队介绍</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 
-<link rel="shortcut icon" href="images/web_logo.png" type="image/x-icon">
-<link rel="icon" href="images/web_logo.png"type="image/x-icon">
-<link rel="shortcut icon" href="images/web_logo.png" type="image/x-icon">
-<link rel="icon" href="images/web_logo.png"type="image/x-icon">
-<link href="css/demo.css" rel="stylesheet" type="text/css">
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="css/iconfont.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/team.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-<script>
-$(function(){  
-        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失  
-        $(function () {  
-            $(window).scroll(function(){  
-                if ($(window).scrollTop()>100){  
-                    $("#back-to-top").fadeIn(800);  
-                }  
-                else  
-                {  
-                    $("#back-to-top").fadeOut(1000);  
-                }  
-            });  
-  
-            //当点击跳转链接后，回到页面顶部位置  
-  
-            $("#back-to-top").click(function(){  
-                $('body,html').animate({scrollTop:0},1000);  
-                return false;  
-            });  
-        });  
-    });  
-</script>
+    <link href="css/team.css" rel="stylesheet" type="text/css">
 
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(e) {
-	$('.member-detail-btn').click(function(){
-			$(this).find('.member-1 .member-thumb:before').stop().transform({perspective:'1000px'},{rotateY:'0'},'fast')
-			$(this).find('.member-1 .member-thumb:after').z-index(1).
-		},function(){
-			$(this).find('.member-1 .member-thumb:before').stop().transform({perspective:'1000px'},{rotateY:'0'},'fast')
-			$(this).find('.member-1 .member-thumb:after').z-index(0).
-	})
-})
-</script>
 </head>
-
 <body>
-<!--section began-->
-<section id="one">
-	<header>
-    	<div class="inner">
-        	<a href="index_1.html"><img src="images/logo_small_03.png" class="logo_left"></a>
-            <nav>
-            	<ul class="nav_list">
-                	<li class="home_1"><a href="index_1.html">首页</a></li>
-                    <li class="about"><a href="about.html">关于我们</a></li>
-                    <li class="contast"><a href="contast.html">联系我们</a></li>
-                    <li class="story"><a href="story.html">哇妙故事</a></li>
-                    <li class="team"><a href="#">团队介绍</a></li>
-                    <li class="join"><a href="join.html">加入我们</a></li>
-                    <div class="clearfix"></div>
-                </ul>	
-            </nav>
-        </div>
-    </header>
-    <div class="inner">
-		<div class="inner">
-			<h1>团队介绍</h1>
-			<h3>Team Introduction</h3>
-		</div>
+<!--导航-->
+<nav class="navbar navbar-default" id="w_nav">
+    <a href="index.html"><img src="images/logo_small_03.png" id="logo_top"></a>
+    <ul>
+        <li class="other"><a href="index.html">首页</a></li>
+        <li class="other"><a href="about.html">关于我们</a></li>
+        <li class="other"><a href="contact.html">联系我们</a></li>
+        <li class="other"><a href="story.html">哇妙故事</a></li>
+        <li class="current"><a href="team.html">团队介绍</a></li>
+        <li class="other"><a href="join.html">加入我们</a></li>
+    </ul>
+</nav>
+<!--内容-->
+<div id="container">
+    <div class="row title">
+        <h2>团队介绍</h2>
+        <h4>Team Introduction</h4>
     </div>
-</section>
-<section id="two">
-	<img src="images/two_position_01.png" class="one_position">
-</section>
-<section id="js-point" class="content-inner">
-	<h2 class="member-num js-text-split"></h2>
-	<div class="inner">
-    	<ul class="member-list is-active">
-        	<li class="member-1 js-animation">
-            	<div class="member-block">
-                	<div class="member-block-inner">
-                    	<div class="member-block-left">
-							<div class="member-thumb"></div>
+
+    <!--团队卡片-->
+    <ul class="member-list">
+        <li class="member-1 member-block">
+            <div class="member-block-inner">
+                <div class="member-block-left flip-container card-pic-1">
+                    <div class="flipper">
+                        <!--正面内容-->
+                        <div class="front">
+                            <img src="images/team_03.png" class="img-responsive center-block">
                         </div>
-                        <div class="member-block-right">
-                        	<h1 class="member-name">阿毛<br/><span>Stanley Lang</span></h1>
-                            <div class="member-detail-btn"><span></span></div>
-                            <div class="member-detail">
-                            	<div class="member-detail-inner">
-                                	<p class="member-detail-text">对于各种电子设备表现极为热衷。喜欢骑行，网球，游戏。
-                                    喜欢各种挑战的大射手。现任WowMeow全职大管家。 
-                                </div>
-                            </div>
-                        	<h2 class="green-label tri-lt"><p>CEO</p></h2>
+                        <!--背面内容-->
+                        <div class="back">
+                            <img src="images/team_09.png" class="img-responsive center-block">
                         </div>
                     </div>
                 </div>
-            </li>
-            <li class="membrt-2"></li>
-            <li class="membrt-3"></li>
-            <li class="membrt-4"></li>
-            <li class="membrt-5"></li>
-        </ul>
+                <div class="member-block-right card-content-1">
+                    <div class="z" >
+                        <p class="lead">阿娜达</p>
+                        <small>卡机吗</small>
+                        <div class="member-detail-btn"><span></span></div>
+                    </div>
+                    <div class="f" style="display: none">
+                        <p class="lead">wweqwr</p>
+                        <small>hahaha</small>
+                        <div class="member-detail-btn"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--底部-->
+<footer>
+    <!--回到顶部-->
+    <div id="gotop">
+        <p id="back-to-top"><a href="#top"><img src="images/gototop.png" class="gotop_bg"/></a></p>
     </div>
-</section>
-<div class="border-inner">
-	<div class="bg-border border-1"></div>
-    <div class="bg-border border-2"></div>
-    <div class="bg-border border-3"></div>
-    <div class="bg-border border-4"></div>
-    <div class="bg-border border-5"></div>
-</div>
-<footer></footer>
-<!--section end-->
-<!--gotop began-->
-<div id="gotop">
-	<p id="back-to-top"><a href="#top"><img src="images/gototop.png"  class="gotop_bg"/></a></p> 
-</div>
-<!--gotop end-->
+</footer>
+<!--加载bootstrap-->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        var flag=1;
+        $(".member-detail-btn").click(function() {
+            if (flag == 1) {
+                $('.card-content-1 .z').hide();
+                $('.card-content-1 .f').show();
+                $('.card-pic-1').addClass('flip');
+                flag = 0;
+            } else {
+                $('.card-content-1 .z').show();
+                $('.card-content-1 .f').hide();
+                $('.card-pic-1').removeClass('flip');
+                flag = 1;
+            }
+        });
+    })
+</script>
 </body>
 </html>
